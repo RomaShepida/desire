@@ -114,7 +114,6 @@
 
                 background-image: url(../images/footer/icon_mail.svg);
                 background-repeat: no-repeat;
-                // background-size: cover;
 
                 position: absolute;
                 left: 0px;
@@ -161,7 +160,7 @@
 
             border: none;
             border-radius: 21px;
-            
+
             outline: none;
             cursor: pointer;
         }
@@ -169,25 +168,57 @@
 
     // .footer__social
     &__social {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 28px;
+
+        width: 125px;
+
+        margin-right: auto;
+        margin-left: 100px;
 
         // .footer__social-item
-        &-item {}
+        &-item {
+            margin-bottom: 15px;
+        }
+
+        // .footer__social-icon
+        &-icon {
+            width: 16px;
+        }
 
         // .footer__social-link
-        &-link {}
+        &-link {
+            display: flex;
+
+            color: $color_light-black;
+
+            & span {
+                display: inline;
+                padding-left: 15px;
+            }
+        }
     }
 
     // .footer__menu
     &__menu {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 28px;
 
-        // .footer__menu-list
-        &-list {}
+        margin-right: 60px;
+
+        width: 125px;
 
         // .footer__menu-item
-        &-item {}
+        &-item {
+            margin-bottom: 15px;
+        }
 
         // .footer__menu-link
-        &-link {}
+        &-link {
+            color: $color_light-black;
+        }
     }
 
     // .footer__copyright
