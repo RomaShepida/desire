@@ -5,4 +5,51 @@
 @import 'global';
 
 
-// START
+// ------ HEADER ------
+.header {
+
+    // .header__inner
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 120px;
+    }
+
+    // .header__btn
+    &__btn {
+        background-color: transparent;
+        border: none;
+        padding: 0;
+
+        cursor: pointer;
+    }
+}
+
+.menu {
+    padding-right: 15px;
+
+    // .menu__list
+    &__list {
+        display: flex;
+
+        // .menu__list-item
+        &-item {
+            padding-right: 45px;
+            padding-left: 35px;
+        }
+
+        // .menu__list-link
+        &-link {
+            font-family: $font_montserrat;
+            line-height: 22px;
+
+            color: rgba(54, 56, 56, 0.9033);
+        }
+    }
+}
+
+.logo {
+    margin-left: auto;
+    margin-right: auto;
+}
