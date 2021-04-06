@@ -224,6 +224,130 @@
     }
 }
 
+// ------ NEW-COLLECTION ------ //
+.new-collection {
+    text-align: center;
+    padding: 45px 0 105px;
+
+    // .new-collection__title
+    &__title {
+        font-family: $font_montserrat;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 51px;
+
+        color: $color_black;
+
+        padding-bottom: 25px;
+        margin-bottom: 25px;
+
+        position: relative;
+
+        &::after {
+            content: '';
+            width: 252px;
+            height: 1px;
+
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+
+            background-color: #6D7278;
+        }
+    }
+
+    // .new-collection__text
+    &__text {
+        max-width: 730px;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+}
+
+.collection {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 30px;
+
+    // .collection__item
+    &__item {
+        position: relative;
+
+        transition: all .5s;
+
+        &:hover {
+            .collection__info {
+                opacity: 1;
+            }
+        }
+    }
+
+    // .collection__image
+    &__image {
+        min-height: 350px;
+        object-fit: cover;
+    }
+
+    // .collection__info
+    &__info {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 10px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        background-color: rgba($color_white, 0.7);
+
+        opacity: 0;
+
+        transition: all .5s;
+
+        // .collection__info-title
+        &-title {
+            font-family: $font_montserrat;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 24px;
+
+            color: $color_black;
+
+            padding-bottom: 19px;
+            margin-bottom: 19px;
+
+            position: relative;
+
+            &::after {
+                content: '';
+                width: 85%;
+                height: 1px;
+
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+
+                background-color: #6D7278;
+            }
+        }
+
+        // .collection__info-text
+        &-text {
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 28px;
+
+            color: $color_light-black;
+        }
+    }
+}
+
 // ------ FOOTER ------ //
 .footer {
     background-color: $color_grey;
