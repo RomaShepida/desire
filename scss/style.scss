@@ -54,12 +54,6 @@
     margin-right: auto;
 }
 
-.rightside {
-
-    // .rightside-menu
-    &-menu {}
-}
-
 .rightside-menu {
     position: absolute;
     right: 0;
@@ -76,6 +70,8 @@
     background-color: #fff;
 
     transition: all 0.5s;
+
+    z-index: 5;
 
     // .rightside-menu__close
     &__close {
@@ -146,6 +142,85 @@
     // .rightside-menu.rightside-menu--close
     &.rightside-menu--close {
         transform: translateX(500%);
+    }
+}
+
+// ------ TOP ------ //
+.top {
+
+    // .top__inner
+    &__inner {
+        padding-bottom: 70px;
+
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            background-image: url(../images/top/main_slider-bg.jpg);
+            width: 100%;
+            height: 722px;
+            top: 0;
+            z-index: -1;
+        }
+    }
+
+    // .top__slider
+    &__slider {
+
+        // .top__slider-item
+        &-item {
+            // added !important to replace display: inline-block from .top__slider-item in HTML that was added by slick.js
+            display: flex !important;
+            justify-content: center;
+        }
+
+        // .top__slider-img
+        &-img {
+            margin-left: -10%;
+            max-width: 703px;
+            max-height: 815px;
+            object-fit: cover;
+        }
+
+        // .top__slider-info
+        &-info {
+            max-width: 635px;
+            margin-left: 20px;
+            padding-top: 185px;
+        }
+
+        // .top__slider-title
+        &-title {
+            font-family: $font_montserrat;
+            font-weight: 700;
+            font-size: 110px;
+            line-height: 134px;
+
+            color: $color_black;
+
+            margin-bottom: 26px;
+            padding-bottom: 26px;
+
+            position: relative;
+
+            &::after {
+                content: '';
+                width: 185px;
+                height: 1px;
+
+                position: absolute;
+                left: 0;
+                bottom: 0;
+
+                background-color: #6D7278;
+            }
+        }
+
+        // .top__slider-text
+        &-text {
+            max-width: 585px;
+        }
     }
 }
 
