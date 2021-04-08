@@ -44,7 +44,13 @@
             font-family: $font_montserrat;
             line-height: 22px;
 
-            color: rgba(54, 56, 56, 0.9033);
+            color: rgba($color_black, 0.9033);
+
+            transition: all 0.5s;
+
+            &:hover {
+                text-shadow: 1px 1px 3px rgba($color_black, 0.7);
+            }
         }
     }
 }
