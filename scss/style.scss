@@ -1164,3 +1164,15 @@
         }
     }
 }
+
+// ------ PARTNERS ------ //
+.partners {
+    padding-bottom: 72px;
+
+    // .partners__items
+    &__items {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
