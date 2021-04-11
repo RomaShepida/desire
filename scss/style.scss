@@ -78,7 +78,7 @@
 
         max-width: 694px;
         width: 100%;
-        height: 200%;
+        height: 100%;
 
         box-shadow: -2px 3px 17px 0px $color_black;
 
@@ -1054,11 +1054,113 @@
 
         display: flex;
         justify-content: center;
+    }
+}
 
-        // .about__popup-play
-        &-play {}
+// ------ INSPIRATION ------ //
+.inspiration {
+    padding-top: 100px;
 
-        // .about__popup-imgbtn
-        &-imgbtn {}
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-image: url(../images/inspiration/inspiration-bg.jpg);
+        background-repeat: no-repeat;
+        background-position: bottom center;
+        height: 414px;
+        z-index: -1;
+    }
+
+    // .inspiration__inner
+    &__inner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    // .inspiration__img
+    &__img {
+        margin-right: 78px;
+        margin-left: -230px;
+        padding-bottom: 45px;
+    }
+
+    // .inspiration__content
+    &__content {
+        max-width: 825px;
+        margin-bottom: 75px;
+    }
+
+    // .inspiration__title
+    &__title {
+        font-family: $font_montserrat;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 60px;
+
+        color: $color_black;
+
+        padding-bottom: 15px;
+        margin-bottom: 25px;
+
+        position: relative;
+
+        &::after {
+            content: '';
+            width: 200px;
+            height: 2px;
+
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+
+            background-color: #6D7278;
+        }
+    }
+
+    // .inspiration__text
+    &__text {
+        margin-bottom: 50px;
+    }
+
+    // .inspiration__item
+    &__item {
+
+        // .inspiration__item-content
+        &-content {
+            display: flex;
+            justify-content: space-between;
+
+            padding-bottom: 14px;
+            margin-top: 33px;
+
+            border-bottom: 2px solid #FFFFFF;
+            border-radius: 4px;
+        }
+
+        // .inspiration__item-text, .inspiration__item-num
+        &-text,
+        &-num {
+            font-family: $font_montserrat;
+            font-weight: 700;
+            line-height: 23px;
+
+            color: $color_black;
+        }
+
+        // .inspiration__item-line
+        &-line {
+            height: 2px;
+            border-radius: 4px;
+
+            margin-top: -2px;
+
+            background-color: $color_black;
+        }
     }
 }
