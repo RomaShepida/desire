@@ -370,7 +370,7 @@
     background-color: rgba($color_grey, 0.5);
 
     padding: 14px 0px;
-    
+
     // .breadcrumbs__list
     &__list {
         display: flex;
@@ -970,3 +970,95 @@
 }
 
 // --- ABOUT PAGE --- //
+// ------ ABOUT ------ //
+.about {
+
+    // .about__prev
+    &__prev {
+        background-image: url(../images/about/prev-bg.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top center;
+
+        text-align: center;
+
+        padding: 160px 0px;
+        margin-top: -56px;
+
+        // .about__prev-title
+        &-title {
+            font-family: $font_montserrat;
+            font-weight: 700;
+            font-size: 60px;
+            line-height: 80px;
+
+            color: $color_black;
+        }
+    }
+
+    // .about__content
+    &__content {
+        padding: 130px 0 40px;
+    }
+
+    // .about__title
+    &__title {
+        font-family: $font_montserrat;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 60px;
+
+        color: $color_black;
+
+        max-width: 822px;
+
+        padding-bottom: 22px;
+        margin-bottom: 23px;
+
+        position: relative;
+
+        &::after {
+            content: '';
+            width: 200px;
+            height: 2px;
+
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+
+            background-color: #6D7278;
+        }
+    }
+
+    // .about__text
+    &__text {
+        padding-left: 285px;
+
+        & p {
+            margin-bottom: 30px;
+
+            &:last-child {
+                margin-bottom: 45px;
+            }
+        }
+    }
+
+    // .about__popup
+    &__popup {
+        background-image: url(../images/about/popup-bg.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top center;
+
+        padding: 167px 0;
+
+        display: flex;
+        justify-content: center;
+
+        // .about__popup-play
+        &-play {}
+
+        // .about__popup-imgbtn
+        &-imgbtn {}
+    }
+}

@@ -20,4 +20,5 @@ $(function () {
             filter: '.category-bedroom'
         }
     });
+    
 })

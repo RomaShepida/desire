@@ -10,3 +10,13 @@ $color_light-grey: #A1A1A1;
 $color_grey: #DFDFDF;
 $color_white: #FFFFF0;
 $color_yellow: #FFEF35;
+
+// MIXINS
+
+// mixin for fancybox (to resolve problem that fancybox have only css file, but we work with scss (vid on youtube: /Nxg6UfofZX0?t=24120)
+@function max($numbers...) {
+    @return m#{a}x(#{$numbers});
+}
+@function min($numbers...) {
+    @return m#{i}n(#{$numbers});
+}
