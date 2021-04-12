@@ -200,39 +200,11 @@
             margin-bottom: 16px;
         }
 
-        // .footer__contacts-email
+        // .footer__contacts-text
         &-email {
-            color: $color_black;
-
-            font-weight: 600;
-            font-size: 14px;
-
-            display: inline-block;
-
-            padding-left: 30px;
             margin-bottom: 22px;
-
-            position: relative;
-
-            transition: all 0.5s;
-
-            &:hover {
-                text-shadow: 1px 1px 3px rgba($color_black, 0.7);
-            }
-
-            &::before {
-                content: '';
-                width: 16px;
-                height: 16px;
-
-                background-image: url(../images/footer/icon_mail.svg);
-                background-repeat: no-repeat;
-
-                position: absolute;
-                left: 0px;
-                top: 7px;
-            }
         }
+
     }
 
     // .footer__form
@@ -1193,4 +1165,156 @@
 .map {
     margin-top: -55px;
     margin-bottom: 50px;
+}
+
+.contacts {
+    margin-bottom: 100px;
+
+    // .contacts__title
+    &__title {
+        font-family: $font_montserrat;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 60px;
+
+        color: $color_black;
+
+        padding-bottom: 25px;
+        margin-bottom: 40px;
+
+        position: relative;
+
+        &::after {
+            content: '';
+            width: 200px;
+            height: 2px;
+
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+
+            background-color: #6D7278;
+        }
+    }
+
+    // .contacts__content
+    &__content {
+        padding-left: 285px;
+
+        // .contacts__content-text
+        &-text {
+            color: $color_light-grey;
+
+            margin-bottom: 10px;
+        }
+
+        // .contacts__content-address
+        &-address {
+            margin-bottom: 16px;
+        }
+
+        // .contacts__content-tel
+        &-tel {
+            color: inherit;
+        }
+
+        // .contacts__content-email
+        &-email {
+            margin-bottom: 24px;
+        }
+    }
+
+    // .contacts__social
+    &__social {
+        display: flex;
+        align-items: center;
+
+        margin-bottom: 21px;
+
+        // .contacts__social-item
+        &-item {
+            margin-right: 36px;
+        }
+
+        // .contacts__social-link
+        &-link {}
+
+        // .contacts__social-icon
+        &-icon {}
+    }
+
+    // .contacts__form
+    &__form {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        // .contacts__form-input
+        &-input {
+            padding: 6px 10px 6px 17px;
+            margin-bottom: 13px;
+            width: 49%;
+
+            border: 1px solid rgba($color_grey, 1);
+            border-radius: 21px;
+
+            background-color: transparent;
+
+            outline: none;
+
+            &::placeholder {
+                color: $color_light-grey;
+
+                font-size: 16px;
+                line-height: 28px;
+            }
+        }
+
+        // .contacts__form-texarea
+        &-texarea {
+            padding: 14px 10px 14px 17px;
+            margin-bottom: 20px;
+            width: 100%;
+            min-height: 125px;
+
+            resize: none;
+
+            border: 1px solid rgba($color_grey, 1);
+            border-radius: 24px;
+
+            background-color: transparent;
+
+            outline: none;
+
+            &::placeholder {
+                color: $color_light-grey;
+
+                font-size: 16px;
+                line-height: 28px;
+            }
+        }
+
+        // .contacts__form-btn
+        &-btn {
+            padding: 6px 12px;
+            width: 181px;
+
+            background-color: $color_black;
+            color: $color_white;
+
+            font-weight: 600;
+
+            border: none;
+            border-radius: 21px;
+
+            outline: none;
+            cursor: pointer;
+
+            transition: all 0.5s;
+
+            &:hover {
+                box-shadow: 3px 3px 4px rgba($color_black, 0.7);
+            }
+        }
+    }
 }
