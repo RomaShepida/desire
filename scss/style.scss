@@ -1377,3 +1377,94 @@
         transition: all .5s;
     }
 }
+
+// --- BLOG PAGE --- //
+// ------ BLOG ------ //
+.blog {
+
+    // .blog__inner
+    &__inner {}
+
+    // .blog__items
+    &__items {}
+
+    // .blog__category
+    &__category {
+
+        // .blog__category-title
+        &-title {}
+
+        // .blog__category-list
+        &-list {}
+
+        // .blog__category-item
+        &-item {}
+
+        // .blog__category-link
+        &-link {}
+    }
+
+    // .blog__tags
+    &__tags {
+
+        // .blog__tags-title
+        &-title {}
+
+        // .blog__tags-link
+        &-link {}
+    }
+
+    // .blog__social
+    &__social {
+
+        // .blog__social-item
+        &-item {}
+
+        // .blog__social-link
+        &-link {}
+
+        // .blog__social-icon
+        &-icon {}
+    }
+}
+
+.aside {
+
+    // .aside__search
+    &__search {
+
+        // .aside__search-input
+        &-input {}
+
+        // .aside__search-btn
+        &-btn {}
+
+        // .aside__search-img
+        &-img {}
+    }
+}
+
+.recent {
+
+    // .recent-posts
+    &-posts {}
+}
+
+.recent-posts {
+
+    // .recent-posts__title
+    &__title {}
+
+    // .recent-posts__list
+    &__list {}
+
+    // .recent-posts__item
+    &__item {
+
+        // .recent-posts__item-date
+        &-date {}
+
+        // .recent-posts__item-author
+        &-author {}
+    }
+}
