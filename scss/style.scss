@@ -1237,12 +1237,6 @@
         &-item {
             margin-right: 36px;
         }
-
-        // .contacts__social-link
-        &-link {}
-
-        // .contacts__social-icon
-        &-icon {}
     }
 
     // .contacts__form
@@ -1381,9 +1375,14 @@
 // --- BLOG PAGE --- //
 // ------ BLOG ------ //
 .blog {
+    padding-top: 58px;
+    padding-bottom: 100px;
 
     // .blog__inner
-    &__inner {}
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
 
     // .blog__items
     &__items {}
@@ -1392,79 +1391,174 @@
     &__category {
 
         // .blog__category-title
-        &-title {}
+        &-title {
+            font-family: $font_montserrat;
+            line-height: 23px;
+
+            color: rgba($color_black, 1);
+
+            margin-bottom: 14px;
+        }
 
         // .blog__category-list
-        &-list {}
+        &-list {
+            margin-bottom: 48px;
+        }
 
         // .blog__category-item
-        &-item {}
+        &-item {
+            margin-bottom: 12px;
+        }
 
         // .blog__category-link
-        &-link {}
+        &-link {
+            color: $color_dark-grey;
+        }
     }
 
     // .blog__tags
     &__tags {
+        margin-bottom: 60px;
 
         // .blog__tags-title
-        &-title {}
+        &-title {
+            font-family: $font_montserrat;
+            line-height: 23px;
+
+            color: rgba($color_black, 1);
+
+            margin-bottom: 14px;
+        }
 
         // .blog__tags-link
-        &-link {}
+        &-link {
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 28px;
+
+            color: #8F8D8D;
+
+            padding: 0 16px;
+            margin-right: 5px;
+            margin-bottom: 10px;
+
+            border: 1px solid rgba(#454647, .5);
+            border-radius: 14px;
+
+            display: inline-block;
+        }
     }
 
     // .blog__social
     &__social {
+        display: flex;
 
         // .blog__social-item
-        &-item {}
-
-        // .blog__social-link
-        &-link {}
-
-        // .blog__social-icon
-        &-icon {}
+        &-item {
+            margin-right: 20px;
+        }
     }
 }
 
 .aside {
+    width: 349px;
+    margin-left: 30px;
 
     // .aside__search
     &__search {
+        position: relative;
+
+        margin-bottom: 44px;
 
         // .aside__search-input
-        &-input {}
+        &-input {
+            padding: 6px 50px 6px 18px;
+
+            border: 1px solid rgba($color_black, 0.7);
+            border-radius: 20px;
+
+            width: 100%;
+
+            &::placeholder {
+                color: $color_light-grey;
+            }
+        }
 
         // .aside__search-btn
-        &-btn {}
+        &-btn {
+            position: absolute;
+            top: 12px;
+            right: 19px;
 
-        // .aside__search-img
-        &-img {}
+            padding: 0;
+
+            background: transparent;
+            border: none;
+
+            cursor: pointer;
+        }
     }
 }
 
-.recent {
-
-    // .recent-posts
-    &-posts {}
-}
-
+// .recent-posts
 .recent-posts {
 
     // .recent-posts__title
-    &__title {}
+    &__title {
+        font-family: $font_montserrat;
+        line-height: 23px;
+
+        color: rgba($color_black, 1);
+
+        margin-bottom: 24px;
+
+    }
 
     // .recent-posts__list
-    &__list {}
+    &__list {
+        margin-bottom: 50px;
+    }
 
     // .recent-posts__item
     &__item {
+        margin-bottom: 11px;
+
+        // .recent-posts__item-title
+        &-title {
+            color: $color_dark-grey;
+
+            display: block;
+        }
 
         // .recent-posts__item-date
-        &-date {}
+        &-date {
+            font-size: 14px;
+            line-height: 28px;
+
+            color: $color_light-grey;
+
+            padding-right: 7px;
+            position: relative;
+
+            &::after {
+                content: "";
+                position: absolute;
+                width: 1px;
+                height: 14px;
+                right: 0;
+                top: 4px;
+                background-color: $color_light-grey;
+            }
+        }
 
         // .recent-posts__item-author
-        &-author {}
+        &-author {
+            font-size: 14px;
+            line-height: 28px;
+
+            color: $color_light-grey;
+
+            padding-left: 7px;
+        }
     }
 }
