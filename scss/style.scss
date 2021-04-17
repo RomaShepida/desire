@@ -1378,6 +1378,8 @@
     padding-top: 58px;
     padding-bottom: 100px;
 
+
+
     // .blog__inner
     &__inner {
         display: flex;
@@ -1385,7 +1387,197 @@
     }
 
     // .blog__items
-    &__items {}
+    &__items {
+        max-width: 730px;
+    }
+
+    // .blog__item
+    &__item {
+        margin-bottom: 80px;
+
+        // .blog__item-info
+        &-info {
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 28px;
+
+            color: $color_light-black;
+
+            margin-bottom: 9px;
+        }
+
+        // .blog__item-date
+        &-date {
+            padding-right: 7px;
+
+            position: relative;
+
+            &::after {
+                content: "";
+                position: absolute;
+                width: 1px;
+                height: 15px;
+                right: 0;
+                top: 4px;
+
+                background-color: $color_light-black;
+            }
+        }
+
+        // .blog__item-author
+        &-author {
+            padding-right: 7px;
+            padding-left: 7px;
+
+            color: inherit;
+
+            position: relative;
+
+            &::after {
+                content: "";
+                position: absolute;
+                width: 1px;
+                height: 15px;
+                right: 0;
+                top: 4px;
+
+                background-color: $color_light-black;
+            }
+        }
+
+        // .blog__item-theme
+        &-theme {
+            padding-left: 7px;
+
+            color: inherit;
+        }
+
+        // .blog__item-title
+        &-title {
+            font-family: $font_montserrat;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 38px;
+
+            color: $color_black;
+
+            margin-bottom: 6px;
+        }
+
+        // .blog__item-image
+        &-image {
+            max-width: 730px;
+            margin-bottom: 25px;
+
+            object-fit: cover;
+
+        }
+
+        // .blog__item-popup
+        &-popup {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        // .blog__item-imgbtn
+        &-imgbtn {}
+    }
+
+    // .blog__blockquote
+    &__blockquote {
+        background: rgba($color_grey, 0.5);
+
+        padding: 55px 65px;
+
+        text-align: center;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 38px;
+        font-style: italic;
+
+        margin-bottom: 50px;
+
+        // .blog__blockquote-author
+        &-author {
+            padding-top: 23px;
+            margin-top: 23px;
+
+            font-family: $font_montserrat;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 22px;
+            font-style: normal;
+
+            color: $color_black;
+
+            position: relative;
+
+            &::before {
+                content: '';
+                width: 200px;
+                height: 1px;
+
+                position: absolute;
+                top: 0px;
+                left: 50%;
+                transform: translateX(-50%);
+
+                background-color: #6D7278;
+
+                border-radius: 0.5px;
+            }
+        }
+    }
+
+    .article {
+
+        // .article-popup
+        &-popup {
+
+            // .article-popup__box
+            &__box {
+                position: relative;
+            }
+        }
+
+        // .article-slider
+        &-slider {
+
+            // .article-slider__box
+            &__box {}
+
+            // .article-slider__img
+            &__img {}
+        }
+    }
+
+    .pagination {
+
+        // .pagination__arrow
+        &__arrow {
+
+            // .pagination__arrow-icon
+            &-icon {}
+        }
+
+        // .pagination__list
+        &__list {
+
+            // .pagination__list-item
+            &-item {}
+
+            // .pagination__list-num
+            &-num {
+
+                // .pagination__list-num--active
+                &--active {}
+            }
+
+
+        }
+    }
 
     // .blog__category
     &__category {
