@@ -2165,6 +2165,7 @@ body {
 }
 .blog .pagination__list-num {
   font-weight: 600;
+  font-size: 14px;
   line-height: 28px;
   color: #707070;
 }
@@ -2212,6 +2213,203 @@ body {
 }
 .blog__social-item {
   margin-right: 20px;
+}
+.blog-one {
+  margin-bottom: -100px;
+}
+.blog-one__text {
+  margin-bottom: 40px;
+}
+.blog-one__text blockquote {
+  font-style: italic;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 38px;
+  color: #363838;
+  padding: 40px 42px 30px;
+}
+.blog-one__text blockquote .blog__blockquote-author::before {
+  left: 0px;
+  transform: translateX(0%);
+}
+.blog-one__tags {
+  margin-bottom: 39px;
+}
+.blog-one__tags-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 31px;
+  color: #363838;
+  margin-bottom: 10px;
+}
+.blog-one__tags-link {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 28px;
+  color: #8F8D8D;
+  padding: 0 16px;
+  margin-right: 22px;
+  margin-bottom: 10px;
+  border: 1px solid rgba(69, 70, 71, 0.5);
+  border-radius: 14px;
+}
+.blog-one__links {
+  padding: 40px 0px 32px;
+  margin-bottom: 35px;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #DFDFDF;
+  border-bottom: 1px solid #DFDFDF;
+}
+.blog-one__link {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 28px;
+  color: #707070;
+  display: inline-block;
+  max-width: 276px;
+}
+.blog-one__link-prev {
+  padding-left: 33px;
+  position: relative;
+}
+.blog-one__link-prev::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 12px;
+  height: 23px;
+  background-image: url(../images/blog/left-arrow-big.svg);
+}
+.blog-one__link-next {
+  text-align: right;
+  padding-right: 33px;
+  position: relative;
+}
+.blog-one__link-next::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 12px;
+  height: 23px;
+  background-image: url(../images/blog/right-arrow-big.svg);
+}
+.blog-one__comments-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 31px;
+  color: #363838;
+  margin-bottom: 15px;
+}
+.blog-one__comments-item {
+  display: flex;
+  margin-bottom: 40px;
+  position: relative;
+}
+.blog-one__comments-avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.blog-one__comments-info {
+  margin-left: 13px;
+}
+.blog-one__comments-name {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  line-height: 23px;
+  color: #363838;
+}
+.blog-one__comments-date {
+  color: #A1A1A1;
+}
+.blog-one__comments-text {
+  margin-top: 10px;
+}
+.blog-one__comments-reply {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+  color: #707070;
+}
+.blog-one__form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.blog-one__form-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  line-height: 23px;
+  color: #363838;
+  margin-bottom: 25px;
+}
+.blog-one__form-textarea {
+  border: 1px solid #DFDFDF;
+  border-radius: 24px;
+  padding: 14px 15px;
+  margin-bottom: 12px;
+  width: 100%;
+  min-height: 125px;
+  resize: none;
+}
+.blog-one__form-textarea::placeholder {
+  color: #A1A1A1;
+}
+.blog-one__form-name {
+  border: 1px solid #DFDFDF;
+  border-radius: 24px;
+  width: 49%;
+  padding: 6px 15px;
+  margin-bottom: 21px;
+}
+.blog-one__form-name::placeholder {
+  color: #A1A1A1;
+}
+.blog-one__form-email {
+  border: 1px solid #DFDFDF;
+  border-radius: 24px;
+  width: 49%;
+  padding: 6px 15px;
+  margin-bottom: 21px;
+}
+.blog-one__form-email::placeholder {
+  color: #A1A1A1;
+}
+.blog-one__form-lable {
+  width: 100%;
+  margin-bottom: 25px;
+  font-size: 14px;
+  color: #A1A1A1;
+}
+.blog-one__form-button {
+  padding: 6px 12px;
+  width: 181px;
+  background-color: #363838;
+  color: #FFFFF0;
+  font-weight: 600;
+  border: none;
+  border-radius: 21px;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.blog-one__form-button:hover {
+  box-shadow: 3px 3px 4px rgba(54, 56, 56, 0.7);
 }
 
 .aside {
