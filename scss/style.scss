@@ -1378,8 +1378,6 @@
     padding-top: 58px;
     padding-bottom: 100px;
 
-
-
     // .blog__inner
     &__inner {
         display: flex;
@@ -1389,6 +1387,7 @@
     // .blog__items
     &__items {
         max-width: 730px;
+        min-width: 730px;
     }
 
     // .blog__item
@@ -1480,9 +1479,6 @@
             left: 50%;
             transform: translate(-50%, -50%);
         }
-
-        // .blog__item-imgbtn
-        &-imgbtn {}
     }
 
     // .blog__blockquote
@@ -1545,37 +1541,77 @@
         // .article-slider
         &-slider {
 
-            // .article-slider__box
-            &__box {}
+            //.article-slider__arrow
+            &__arrow {
+                padding: 0;
 
-            // .article-slider__img
-            &__img {}
+                border: none;
+
+                background: transparent;
+
+                cursor: pointer;
+
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+
+                z-index: 10;
+
+                //.article-slider__arrow-prev
+                &-prev {
+                    left: 16px;
+                }
+
+                //.article-slider__arrow-next
+                &-next {
+                    right: 16px;
+                }
+            }
+
+            // .article-slider__box
+            &__box {
+                position: relative;
+            }
         }
     }
 
     .pagination {
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
         // .pagination__arrow
         &__arrow {
+            margin: 0 6px;
 
-            // .pagination__arrow-icon
-            &-icon {}
+            //.pagination__arrow--disabled
+            &--disabled {
+                opacity: 0;
+                pointer-events: none;
+            }
         }
 
         // .pagination__list
         &__list {
+            display: flex;
 
             // .pagination__list-item
-            &-item {}
+            &-item {
+                margin: 0 6px;
+            }
 
             // .pagination__list-num
             &-num {
+                font-weight: 600;
+                line-height: 28px;
+
+                color: $color_light-black;
 
                 // .pagination__list-num--active
-                &--active {}
+                &--active {
+                    color: $color-black;
+                }
             }
-
-
         }
     }
 
@@ -1654,6 +1690,7 @@
 
 .aside {
     min-width: 349px;
+    max-width: 349px;
     margin-left: 30px;
 
     // .aside__search
