@@ -25,8 +25,8 @@ $(function () {
     });
 
     $('.article-slider__box').slick({
-        prevArrow: '<button type="button" class="article-slider__arrow article-slider__arrow-prev"><img src="../images/blog/left-slider-arrow.svg" alt="left arrow"></button>',
-        nextArrow: '<button type="button" class="article-slider__arrow article-slider__arrow-next"><img src="../images/blog/right-slider-arrow.svg" alt="right arrow"></button>'
+        prevArrow: '<button type="button" class="article-slider__arrow article-slider__arrow-prev"><img src="images/blog/left-slider-arrow.svg" alt="left arrow"></button>',
+        nextArrow: '<button type="button" class="article-slider__arrow article-slider__arrow-next"><img src="images/blog/right-slider-arrow.svg" alt="right arrow"></button>'
     });
 
     var mixer = mixitup('.gallery__inner', {
