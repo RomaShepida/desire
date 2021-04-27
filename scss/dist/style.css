@@ -1125,35 +1125,41 @@ body {
   cursor: pointer;
   border: none;
 }
-.header .menu {
+.header__btn-menu {
+  display: none;
+}
+
+.menu {
   padding-right: 15px;
 }
-.header .menu__list {
+.menu__list {
   display: flex;
 }
-.header .menu__list-item {
+.menu__list-item {
   padding-right: 45px;
   padding-left: 35px;
 }
-.header .menu__list-link {
+.menu__list-link {
   font-family: "Montserrat", sans-serif;
   line-height: 22px;
   color: rgba(54, 56, 56, 0.9033);
   transition: all 0.5s;
   padding-bottom: 4px;
 }
-.header .menu__list-link:hover {
+.menu__list-link:hover {
   text-shadow: 1px 1px 3px rgba(54, 56, 56, 0.7);
 }
-.header .menu__list-link--active {
+.menu__list-link--active {
   border-bottom: 2px solid rgba(54, 56, 56, 0.7);
   border-radius: 1px;
 }
-.header .logo {
+
+.logo {
   margin-left: auto;
   margin-right: auto;
 }
-.header .rightside-menu {
+
+.rightside-menu {
   position: absolute;
   right: 0;
   top: 0;
@@ -1167,7 +1173,7 @@ body {
   transition: all 0.5s;
   z-index: 5;
 }
-.header .rightside-menu__close {
+.rightside-menu__close {
   background-color: transparent;
   border: none;
   outline: none;
@@ -1176,16 +1182,16 @@ body {
   margin-bottom: 60px;
   cursor: pointer;
 }
-.header .rightside-menu__content {
+.rightside-menu__content {
   text-align: center;
   max-width: 485px;
   margin: 0 auto;
 }
-.header .rightside-menu__logo {
+.rightside-menu__logo {
   display: inline-block;
   margin-bottom: 41px;
 }
-.header .rightside-menu__title {
+.rightside-menu__title {
   font-family: "Montserrat", sans-serif;
   font-size: 36px;
   line-height: 51px;
@@ -1194,7 +1200,7 @@ body {
   margin-bottom: 35px;
   position: relative;
 }
-.header .rightside-menu__title::after {
+.rightside-menu__title::after {
   content: "";
   width: 252px;
   height: 1px;
@@ -1203,13 +1209,13 @@ body {
   left: 25%;
   background-color: #6D7278;
 }
-.header .rightside-menu__text {
+.rightside-menu__text {
   margin-bottom: 75px;
 }
-.header .rightside-menu__image {
+.rightside-menu__image {
   max-width: 485px;
 }
-.header .rightside-menu.rightside-menu--close {
+.rightside-menu.rightside-menu--close {
   transform: translateX(500%);
 }
 
@@ -2477,4 +2483,30 @@ body {
   line-height: 28px;
   color: #A1A1A1;
   padding-left: 7px;
+}
+
+@media (max-width: 768px) {
+  .header__btn {
+    display: none;
+  }
+
+  .menu {
+    padding-right: 0px;
+  }
+
+  .menu__list-item {
+    padding-left: 0px;
+  }
+  .menu__list-item + .menu__list-item {
+    padding-right: 0px;
+  }
+
+  .logo {
+    margin: 0;
+  }
+}
+@media (max-width: 540px) {
+  .logo {
+    order: -1;
+  }
 }
