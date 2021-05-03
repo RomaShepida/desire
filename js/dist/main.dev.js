@@ -7,6 +7,9 @@ $(function () {
   $('.rightside-menu__close').on('click', function () {
     $('.rightside-menu').addClass('rightside-menu--close');
   });
+  $('.header__btn-menu').on('click', function () {
+    $('.menu').toggleClass('menu--open');
+  });
   $('.top__slider').slick({
     dots: true,
     arrows: false,

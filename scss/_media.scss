@@ -1,3 +1,9 @@
+@media (max-width: 998px) {
+    .footer__contacts {
+        width: 380px;
+    }
+}
+
 @media (max-width: 768px) {
     .header__btn {
         display: none;
@@ -14,11 +20,37 @@
             padding-right: 0px;
         }
     }
+
+    .footer__inner {
+        flex-wrap: wrap;
+    }
+
+    .footer__contacts {
+        width: 100%;
+    }
+
+    .footer__contacts-text {
+        max-width: 100%;
+    }
+
+    .footer__form {
+        margin-bottom: 25px;
+    }
+
+    .footer__social,
+    .footer__menu {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
 }
 
 @media (max-width: 540px) {
     .logo {
         order: -1;
+
+        position: relative;
+        z-index: 12;
     }
 
     .header__btn-menu {
@@ -29,6 +61,11 @@
 
         cursor: pointer;
         border: none;
+
+        order: -1;
+
+        position: relative;
+        z-index: 12;
 
         & span {
             display: block;
@@ -48,9 +85,79 @@
 
     .header__inner {
         height: 70px;
+
+        flex-wrap: wrap;
+
+        padding-top: 21px;
+    }
+
+    .menu {
+        padding-left: 0;
+        padding-right: 0;
+
+        width: 100%;
+
+        background-color: #fff;
+
+        position: relative;
+
+        z-index: 11;
+
+        transform: translateY(-350px);
+
+        transition: all .5s;
+    }
+
+    .menu--open {
+        transform: translateY(30px);
     }
 
     .menu__list {
-        display: none;
+        display: block;
+
+        text-align: center;
+    }
+
+    .menu__list-item {
+        padding-right: 0;
+    }
+
+    .menu__list-link {
+        display: block;
+        padding: 20px 0;
+    }
+}
+
+@media (max-width: 410px) {
+    .footer__inner {
+        justify-content: space-between;
+    }
+
+    .footer__social,
+    .footer__menu {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .footer__form {
+        display: block;
+    }
+
+    .footer__form-input {
+        margin-bottom: 15px;
+    }
+
+    .footer__form-btn {
+        width: 100%;
+
+        margin-left: 0;
+    }
+
+    .footer__content {
+        padding: 30px 0 15px;
+    }
+
+    .footer__copyright-text {
+        padding: 20px 0px;
     }
 }

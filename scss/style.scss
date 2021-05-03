@@ -67,12 +67,6 @@
     }
 }
 
-// .logo
-.logo {
-    margin-left: auto;
-    margin-right: auto;
-}
-
 // ------ /HEADER ------ //
 
 // .rightside-menu
@@ -357,6 +351,8 @@
     // .breadcrumbs__list
     &__list {
         display: flex;
+
+        overflow: auto;
     }
 
     // .breadcrumbs__item
