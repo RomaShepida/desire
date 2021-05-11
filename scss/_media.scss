@@ -84,13 +84,20 @@
         text-align: center;
     }
 
+    .blog-box__item-title {
+        margin-bottom: 25px;
+    }
+
     .blog-box__item-imagelink {
         margin-bottom: 0px;
     }
 
-    .blog-box__item-title {
-        max-width: 70%;
-        margin: 0 auto 25px;
+    .blog-box__item-imagelink {
+        width: 100%;
+    }
+
+    .blog-box__item-image {
+        width: 100%;
     }
 }
 
@@ -193,10 +200,6 @@
 
     .gallery {
         padding: 10px 0 40px;
-    }
-
-    .blog-box__item-title {
-        max-width: 95%;
     }
 }
 
@@ -359,9 +362,11 @@
         display: flex;
         flex-direction: column;
     }
+
     .blog-box__date::after {
         display: none;
     }
+
     .blog-box__author::after {
         display: none;
     }
