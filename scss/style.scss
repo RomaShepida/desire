@@ -509,7 +509,7 @@
 .collection {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    column-gap: 30px;
+    grid-gap: 30px;
 
     // .collection__item
     &__item {
