@@ -228,6 +228,16 @@
   .about__popup {
     padding: 60px 0;
   }
+
+  .gallery__item:first-child {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .gallery.gallery-page .gallery__item:nth-child(8) {
+    grid-column: 2;
+    grid-row: 5;
+  }
 }
 @media (max-width: 540px) {
   .logo {
@@ -394,5 +404,10 @@
 
   .partners {
     padding-bottom: 32px;
+  }
+
+  .gallery.gallery-page .gallery__item:nth-child(8) {
+    grid-column: 1;
+    grid-row: 8;
   }
 }
