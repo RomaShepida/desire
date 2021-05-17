@@ -23,7 +23,44 @@ $(function () {
     dots: true,
     arrows: false,
     slidesToShow: 10,
-    slidesToScroll: 10
+    slidesToScroll: 10,
+    responsive: [{
+      breakpoint: 1800,
+      settings: {
+        slidesToShow: 8,
+        slidesToScroll: 8
+      }
+    }, {
+      breakpoint: 1510,
+      settings: {
+        slidesToShow: 6,
+        slidesToScroll: 6
+      }
+    }, {
+      breakpoint: 1140,
+      settings: {
+        slidesToShow: 4,
+        slidesToScroll: 4
+      }
+    }, {
+      breakpoint: 1140,
+      settings: {
+        slidesToShow: 4,
+        slidesToScroll: 4
+      }
+    }, {
+      breakpoint: 740,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3
+      }
+    }, {
+      breakpoint: 540,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    }]
   });
   $('.article-slider__box').slick({
     prevArrow: '<button type="button" class="article-slider__arrow article-slider__arrow-prev"><img src="images/blog/left-slider-arrow.svg" alt="left arrow"></button>',

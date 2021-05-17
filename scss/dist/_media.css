@@ -1,3 +1,16 @@
+@media (max-width: 1800px) {
+  .contact-slider__img {
+    width: 100%;
+  }
+
+  .contact-slider__title {
+    max-width: 100%;
+  }
+
+  .slick-slide {
+    margin-left: 15px;
+  }
+}
 @media (max-width: 1600px) {
   .partners__items {
     flex-wrap: wrap;
@@ -137,6 +150,10 @@
 
   .contacts {
     margin-bottom: 50px;
+  }
+
+  .contact-slider {
+    padding-bottom: 40px;
   }
 }
 @media (max-width: 768px) {
@@ -364,6 +381,10 @@
 
   .menu__list-link--active {
     border-bottom: none;
+  }
+
+  .slick-dots li {
+    margin: 0 4px;
   }
 }
 @media (max-width: 410px) {
