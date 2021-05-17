@@ -395,6 +395,15 @@
     .contacts__form-input {
         width: 100%;
     }
+
+    .menu__list-link {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .menu__list-link--active {
+        border-bottom: none;
+    }
 }
 
 // --------------------------------------------------- 410px --- //
