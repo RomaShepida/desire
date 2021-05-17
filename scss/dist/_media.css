@@ -11,6 +11,10 @@
   .collection__image {
     width: 100%;
   }
+
+  .map {
+    margin-top: 0;
+  }
 }
 @media (max-width: 1200px) {
   .top__slider-title {
@@ -117,6 +121,23 @@
 .blog-box__item-image {
     width: 100%;
   }
+
+  .map {
+    margin-bottom: 15px;
+  }
+
+  .contacts__content {
+    padding-left: 0;
+  }
+
+  .contacts__title {
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+  }
+
+  .contacts {
+    margin-bottom: 50px;
+  }
 }
 @media (max-width: 768px) {
   .header__btn {
@@ -190,6 +211,10 @@
 
   .about__content {
     padding: 70px 0px 0px;
+  }
+
+  .map iframe {
+    height: 350px;
   }
 }
 @media (max-width: 650px) {
@@ -326,6 +351,10 @@
 
   .about__content {
     padding: 40px 0px 0px;
+  }
+
+  .contacts__form-input {
+    width: 100%;
   }
 }
 @media (max-width: 410px) {
