@@ -44,12 +44,12 @@ $(function () {
             {
               breakpoint: 1140,
               settings: {
-                slidesToShow: 4,
-                slidesToScroll: 4
+                slidesToShow: 5,
+                slidesToScroll: 5
               }
             },
             {
-                breakpoint: 1140,
+                breakpoint: 940,
                 settings: {
                   slidesToShow: 4,
                   slidesToScroll: 4
@@ -63,7 +63,7 @@ $(function () {
                 }
             },
             {
-                breakpoint: 540,
+                breakpoint: 541,
                 settings: {
                   slidesToShow: 2,
                   slidesToScroll: 2

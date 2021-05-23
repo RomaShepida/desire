@@ -3,11 +3,14 @@
     .contact-slider__img {
         width: 100%;
     }
+
     .contact-slider__title {
         max-width: 100%;
     }
+
     .slick-slide {
-        margin-left: 15px;
+        margin-left: 8px;
+        margin-right: 8px;
     }
 }
 
@@ -31,8 +34,6 @@
     .map {
         margin-top: 0;
     }
-
-
 }
 
 // --------------------------------------------------- 1200px --- //
@@ -59,6 +60,30 @@
         height: inherit;
         top: 30px;
         background-size: cover;
+    }
+}
+
+// --------------------------------------------------- 1170px --- //
+@media (max-width: 1170px) {
+    .aside {
+        min-width: 100%;
+        max-width: 100%;
+        margin-left: 0;
+        margin-bottom: 40px;
+        order: -1;
+    }
+
+    .blog__inner {
+        flex-wrap: wrap;
+    }
+
+    .blog__items {
+        max-width: 100%;
+        min-width: 269px;
+    }
+    .blog__item-image {
+        max-width: 100%;
+        width: 100%;
     }
 }
 
@@ -298,6 +323,27 @@
         grid-column: 2;
         grid-row: 5;
     }
+
+    .blog-one__link {
+        font-size: 0;
+    }
+
+    .blog-one__form-name,
+    .blog-one__form-email {
+        width: 100%;
+    }
+
+    .blog-one__form-name {
+        margin-bottom: 12px;
+    }
+
+    .blog-one__form-button {
+        margin-bottom: 75px;
+    }
+
+    .blog-one__comments-item {
+        margin-bottom: 28px;
+    }
 }
 
 // --------------------------------------------------- 540px --- //
@@ -425,6 +471,22 @@
     .slick-dots li {
         margin: 0 4px;
     }
+
+    .blog {
+        padding-top: 28px;
+        padding-bottom: 28px;
+    }
+
+    .aside__search {
+        margin-bottom: 20px;
+    }
+
+    .blog__category-list,
+    .recent-posts__list,
+    .blog__tags,
+    .blog__item {
+        margin-bottom: 28px;
+    }
 }
 
 // --------------------------------------------------- 410px --- //
@@ -510,5 +572,9 @@
     .gallery.gallery-page .gallery__item:nth-child(8) {
         grid-column: 1;
         grid-row: 8;
+    }
+
+    .blog-one__text blockquote {
+        padding: 28px 28px 28px;
     }
 }
